@@ -1,0 +1,14 @@
+D:\SMS_Ver1.0\SMS\SMS_DB_Backup\bin\Debug\SMS_DB_Backup.exe.config
+D:\SMS_Ver1.0\SMS\SMS_DB_Backup\bin\Debug\SMS_DB_Backup.exe.manifest
+D:\SMS_Ver1.0\SMS\SMS_DB_Backup\bin\Debug\SMS_DB_Backup.application
+D:\SMS_Ver1.0\SMS\SMS_DB_Backup\bin\Debug\SMS_DB_Backup.exe
+D:\SMS_Ver1.0\SMS\SMS_DB_Backup\bin\Debug\SMS_DB_Backup.pdb
+D:\SMS_Ver1.0\SMS\SMS_DB_Backup\bin\Debug\SMS_DL.dll
+D:\SMS_Ver1.0\SMS\SMS_DB_Backup\bin\Debug\SMS_Entity.dll
+D:\SMS_Ver1.0\SMS\SMS_DB_Backup\bin\Debug\SMS_DL.pdb
+D:\SMS_Ver1.0\SMS\SMS_DB_Backup\bin\Debug\SMS_Entity.pdb
+D:\SMS_Ver1.0\SMS\SMS_DB_Backup\obj\Debug\SMS_DB_Backup.csprojResolveAssemblyReference.cache
+D:\SMS_Ver1.0\SMS\SMS_DB_Backup\obj\Debug\SMS_DB_Backup.exe.manifest
+D:\SMS_Ver1.0\SMS\SMS_DB_Backup\obj\Debug\SMS_DB_Backup.application
+D:\SMS_Ver1.0\SMS\SMS_DB_Backup\obj\Debug\SMS_DB_Backup.exe
+D:\SMS_Ver1.0\SMS\SMS_DB_Backup\obj\Debug\SMS_DB_Backup.pdb
