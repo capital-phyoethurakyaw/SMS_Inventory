@@ -16,6 +16,7 @@ namespace PSKS0113B_1
         static void Main(string[] args)
         {
 
+
             Console.Title = "PSKS0113B_店舗在庫情報取得";
             String sourcePath = @"\\192.168.0.14\ablesoft\CONPHAS-GENERAL\DATA"; 
             String targetPath = @"F:\Development\ShopData";
