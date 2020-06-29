@@ -14,6 +14,8 @@ using System.Diagnostics;
 
 namespace SMS
 {
+
+
     static class Program  
     {
         delegate int Calculator(int e);
