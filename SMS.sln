@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1145
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS", "SMS\SMS.csproj", "{A9C9A57C-47D5-4206-9DFF-B9B17F4C2010}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS_BL", "SMS_BL\SMS_BL.csproj", "{AB658A23-C854-4CE1-A4E6-B85F8E912C6B}"
@@ -45,64 +47,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS_DB_Backup", "SMS_DB_Backup\SMS_DB_Backup.csproj", "{33BA60A4-84A1-4C35-BDD9-1AE81CCA9151}"
 EndProject
 Global
-	GlobalSection(SourceCodeControl) = preSolution
-		SccNumberOfProjects = 19
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = CKM_Controls\\CKM_Controls\\CKM_Controls.csproj
-		SccLocalPath1 = .
-		SccProjectFilePathRelativizedFromConnection1 = CKM_Controls\\CKM_Controls\\
-		SccProjectUniqueName2 = CSVDownload\\CSVDownload.csproj
-		SccLocalPath2 = .
-		SccProjectFilePathRelativizedFromConnection2 = CSVDownload\\
-		SccProjectUniqueName3 = PSKS0106B\\PSKS0106B.csproj
-		SccLocalPath3 = .
-		SccProjectFilePathRelativizedFromConnection3 = PSKS0106B\\
-		SccProjectUniqueName4 = PSKS0107B\\PSKS0107B.csproj
-		SccLocalPath4 = .
-		SccProjectFilePathRelativizedFromConnection4 = PSKS0107B\\
-		SccProjectUniqueName5 = PSKS0112B\\PSKS0112B.csproj
-		SccLocalPath5 = .
-		SccProjectFilePathRelativizedFromConnection5 = PSKS0112B\\
-		SccProjectUniqueName6 = PSKS0113B_1\\PSKS0113B_1.csproj
-		SccLocalPath6 = .
-		SccProjectFilePathRelativizedFromConnection6 = PSKS0113B_1\\
-		SccProjectUniqueName7 = PSKS0115B_1\\PSKS0115B_1.csproj
-		SccLocalPath7 = .
-		SccProjectFilePathRelativizedFromConnection7 = PSKS0115B_1\\
-		SccProjectUniqueName8 = PSKS0115B_2\\PSKS0115B_2.csproj
-		SccLocalPath8 = .
-		SccProjectFilePathRelativizedFromConnection8 = PSKS0115B_2\\
-		SccProjectUniqueName9 = PSKS0117B\\PSKS0117B.csproj
-		SccLocalPath9 = .
-		SccProjectFilePathRelativizedFromConnection9 = PSKS0117B\\
-		SccProjectUniqueName10 = PSKS0118B\\PSKS0118B.csproj
-		SccLocalPath10 = .
-		SccProjectFilePathRelativizedFromConnection10 = PSKS0118B\\
-		SccProjectUniqueName11 = SMS\\SMS.csproj
-		SccLocalPath11 = .
-		SccProjectFilePathRelativizedFromConnection11 = SMS\\
-		SccProjectUniqueName12 = SMS_BL\\SMS_BL.csproj
-		SccLocalPath12 = .
-		SccProjectFilePathRelativizedFromConnection12 = SMS_BL\\
-		SccProjectUniqueName13 = SMS_DL\\SMS_DL.csproj
-		SccLocalPath13 = .
-		SccProjectFilePathRelativizedFromConnection13 = SMS_DL\\
-		SccProjectUniqueName14 = SMS_Entity\\SMS_Entity.csproj
-		SccLocalPath14 = .
-		SccProjectFilePathRelativizedFromConnection14 = SMS_Entity\\
-		SccProjectUniqueName15 = Sugoraku_Shohinkanri_Import\\Sugoraku_Shohinkanri_Import.csproj
-		SccLocalPath15 = .
-		SccProjectFilePathRelativizedFromConnection15 = Sugoraku_Shohinkanri_Import\\
-		SccProjectUniqueName16 = Sugoraku_Shohinkanri_Import_Console\\Sugoraku_Shohinkanri_Import_Console.csproj
-		SccLocalPath16 = .
-		SccProjectFilePathRelativizedFromConnection16 = Sugoraku_Shohinkanri_Import_Console\\
-		SccProjectUniqueName17 = WaitWnd\\WaitWnd.csproj
-		SccLocalPath17 = .
-		SccProjectFilePathRelativizedFromConnection17 = WaitWnd\\
-		SccProjectUniqueName18 = SMS_DB_Backup\\SMS_DB_Backup.csproj
-		SccLocalPath18 = .
-		SccProjectFilePathRelativizedFromConnection18 = SMS_DB_Backup\\
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -183,5 +127,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B315C899-C98D-465C-A50C-0799E95B6268}
 	EndGlobalSection
 EndGlobal

@@ -12,6 +12,7 @@ namespace PSKS0113B_1
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             Console.Title = "PSKS0113B_店舗在庫情報取得";
