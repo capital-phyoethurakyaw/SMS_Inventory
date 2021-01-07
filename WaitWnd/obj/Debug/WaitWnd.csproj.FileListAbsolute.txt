@@ -39,3 +39,12 @@ D:\SMS_Ver1.0\SMS\WaitWnd\obj\Debug\WaitWnd.dll
 D:\SMS_Ver1.0\SMS\WaitWnd\obj\Debug\WaitWnd.pdb
 D:\SMS_Ver1.0\SMS\WaitWnd\obj\Debug\WaitWnd.csprojAssemblyReference.cache
 D:\SMS_Ver1.0\SMS\WaitWnd\obj\Debug\WaitWnd.csproj.CoreCompileInputs.cache
+D:\GIT\SMS_Inventory\WaitWnd\bin\Debug\WaitWnd.dll
+D:\GIT\SMS_Inventory\WaitWnd\bin\Debug\WaitWnd.pdb
+D:\GIT\SMS_Inventory\WaitWnd\obj\Debug\WaitWnd.csprojAssemblyReference.cache
+D:\GIT\SMS_Inventory\WaitWnd\obj\Debug\WaitWnd.Resource1.resources
+D:\GIT\SMS_Inventory\WaitWnd\obj\Debug\WaitWnd.WaitForm.resources
+D:\GIT\SMS_Inventory\WaitWnd\obj\Debug\WaitWnd.csproj.GenerateResource.cache
+D:\GIT\SMS_Inventory\WaitWnd\obj\Debug\WaitWnd.csproj.CoreCompileInputs.cache
+D:\GIT\SMS_Inventory\WaitWnd\obj\Debug\WaitWnd.dll
+D:\GIT\SMS_Inventory\WaitWnd\obj\Debug\WaitWnd.pdb

@@ -45,3 +45,14 @@ D:\SMS_Ver1.0\SMS\SMS_BL\obj\Debug\SMS_BL.pdb
 D:\SMS_Ver1.0\SMS\SMS_BL\obj\Debug\SMS_BL.csprojAssemblyReference.cache
 D:\SMS_Ver1.0\SMS\SMS_BL\obj\Debug\SMS_BL.csproj.CoreCompileInputs.cache
 D:\SMS_Ver1.0\SMS\SMS_BL\obj\Debug\SMS_BL.csproj.CopyComplete
+D:\GIT\SMS_Inventory\SMS_BL\bin\Debug\SMS_BL.dll
+D:\GIT\SMS_Inventory\SMS_BL\bin\Debug\SMS_BL.pdb
+D:\GIT\SMS_Inventory\SMS_BL\bin\Debug\SMS_DL.dll
+D:\GIT\SMS_Inventory\SMS_BL\bin\Debug\SMS_Entity.dll
+D:\GIT\SMS_Inventory\SMS_BL\bin\Debug\SMS_DL.pdb
+D:\GIT\SMS_Inventory\SMS_BL\bin\Debug\SMS_Entity.pdb
+D:\GIT\SMS_Inventory\SMS_BL\obj\Debug\SMS_BL.csprojAssemblyReference.cache
+D:\GIT\SMS_Inventory\SMS_BL\obj\Debug\SMS_BL.csproj.CoreCompileInputs.cache
+D:\GIT\SMS_Inventory\SMS_BL\obj\Debug\SMS_BL.csproj.CopyComplete
+D:\GIT\SMS_Inventory\SMS_BL\obj\Debug\SMS_BL.dll
+D:\GIT\SMS_Inventory\SMS_BL\obj\Debug\SMS_BL.pdb

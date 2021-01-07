@@ -12,6 +12,8 @@ using SMS_BL;
 using System.Threading;
 using System.IO;
 using SMS_DL;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace SMS.Inventory
 {
@@ -26,9 +28,6 @@ namespace SMS.Inventory
         {
             InitializeComponent();
         }
-
-
-
         public frmPSKS0108I(Login_Info loginInfo)
             : base(loginInfo)
         {
@@ -55,11 +54,61 @@ namespace SMS.Inventory
 
         private void frmPSKS0108I_Load(object sender, EventArgs e)
         {
-
             psks0108ibl = new PSKS0108I_BL();
             buttonEnable_Check();
+            
         }
-
+        private void ActivateTimer()
+        {
+         
+                bool IsTicked = false;
+                string flg;
+                var t = new System.Windows.Forms.Timer();
+                t.Interval = 3600000; // it will Tick in 1 hour- seconds
+                t.Tick += (s, e) =>
+                {
+                    if (!CheckDate()) // I hour 
+                    {
+                        WindowState = FormWindowState.Maximized;
+                        BringToFront();
+                        this.TopMost = true;
+                        Focus();
+                        // this.ShowOver();
+                        // this.BringToFront();
+                        flg = DSP_MSG("I301", string.Empty, string.Empty, string.Empty, string.Empty, string.Empty);
+                        if (flg == "1")
+                            IsTicked = true;
+                        else
+                            IsTicked = false;
+                        t.Stop();
+                    }
+                };
+                t.Start();
+           // }
+        }
+        private void ShowOver()
+        {
+            try
+            {
+                Process[] localByName = Process.GetProcessesByName("販売管理");
+                if (localByName.Count() > 0)
+                {
+                    this.Show();
+                    // MessageBox.Show("Got Count");
+                    IntPtr handle = localByName[0].MainWindowHandle;
+                    ShowWindow(handle, SW_SHOWMAXIMIZED);
+                    SetForegroundWindow(handle);
+                    return;
+                }
+            }
+            catch { }
+        }
+        private const int SW_SHOWMAXIMIZED = 3;
+        [DllImport("user32.dll")]
+        static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+        [return: MarshalAs(UnmanagedType.Bool)]
+        [DllImport("user32", CharSet = CharSet.Ansi, SetLastError = true, ExactSpelling = true)]
+        public static extern bool SetForegroundWindow(IntPtr hwnd);
         private void buttonEnable_Check()
         {
             DataTable dt = psks0108ibl.T_SugorakuInport_SELECT();
@@ -111,6 +160,7 @@ namespace SMS.Inventory
 
             //***Bug51 Need Button Enable/Disable on Step1 click,not only WebSaveClick
             buttonEnable_Check();
+            ActivateTimer();
         }
 
         private void btnWebSave_Click(object sender, EventArgs e)
@@ -220,13 +270,29 @@ namespace SMS.Inventory
             return await Task.Factory.StartNew<bool>(function);
         }
 
+        private bool CheckDate()
+        {
+            DataTable dt = psks0108ibl.T_SugorakuInport_SELECT();
+            if (dt.Rows.Count > 0)
+            {
+                DateTime startDate = DateTime.Parse(dt.Rows[0]["InportStartTime"].ToString());
+                DateTime EndDate = DateTime.Parse(dt.Rows[0]["InportEndTime"].ToString());
+                if (startDate > EndDate)
+                    return false;
+            }
+                 
+            return true;
+        }
         private async void btnStage4_Click(object sender, EventArgs e)
         {
+            if (!CheckDate())
+            {
+                DSP_MSG("I301", string.Empty, string.Empty, string.Empty, string.Empty, string.Empty);
+                return;
+            }
             Task task = new Task(new Action(Step1));
             task.Start();
-
             bool result = await Insert();
-
             if (result)
             {
                 task = new Task(new Action(Step2));
