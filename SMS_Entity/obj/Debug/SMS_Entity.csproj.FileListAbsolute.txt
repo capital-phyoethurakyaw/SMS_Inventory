@@ -29,3 +29,9 @@ D:\GIT\SMS_Inventory\SMS_Entity\obj\Debug\SMS_Entity.csprojAssemblyReference.cac
 D:\GIT\SMS_Inventory\SMS_Entity\obj\Debug\SMS_Entity.csproj.CoreCompileInputs.cache
 D:\GIT\SMS_Inventory\SMS_Entity\obj\Debug\SMS_Entity.dll
 D:\GIT\SMS_Inventory\SMS_Entity\obj\Debug\SMS_Entity.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\SMS_Entity\bin\Debug\SMS_Entity.dll
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\SMS_Entity\bin\Debug\SMS_Entity.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\SMS_Entity\obj\Debug\SMS_Entity.csprojAssemblyReference.cache
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\SMS_Entity\obj\Debug\SMS_Entity.csproj.CoreCompileInputs.cache
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\SMS_Entity\obj\Debug\SMS_Entity.dll
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\SMS_Entity\obj\Debug\SMS_Entity.pdb

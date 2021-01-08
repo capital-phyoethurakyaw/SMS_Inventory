@@ -48,3 +48,12 @@ D:\GIT\SMS_Inventory\WaitWnd\obj\Debug\WaitWnd.csproj.GenerateResource.cache
 D:\GIT\SMS_Inventory\WaitWnd\obj\Debug\WaitWnd.csproj.CoreCompileInputs.cache
 D:\GIT\SMS_Inventory\WaitWnd\obj\Debug\WaitWnd.dll
 D:\GIT\SMS_Inventory\WaitWnd\obj\Debug\WaitWnd.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\WaitWnd\bin\Debug\WaitWnd.dll
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\WaitWnd\bin\Debug\WaitWnd.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\WaitWnd\obj\Debug\WaitWnd.csprojAssemblyReference.cache
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\WaitWnd\obj\Debug\WaitWnd.Resource1.resources
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\WaitWnd\obj\Debug\WaitWnd.WaitForm.resources
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\WaitWnd\obj\Debug\WaitWnd.csproj.GenerateResource.cache
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\WaitWnd\obj\Debug\WaitWnd.csproj.CoreCompileInputs.cache
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\WaitWnd\obj\Debug\WaitWnd.dll
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\WaitWnd\obj\Debug\WaitWnd.pdb

@@ -57,3 +57,17 @@ D:\SMS_Ver1.0\SMS\PSKS0117B\bin\Debug\SMS_DL.pdb
 D:\SMS_Ver1.0\SMS\PSKS0117B\obj\Debug\PSKS0117B.csprojResolveAssemblyReference.cache
 D:\SMS_Ver1.0\SMS\PSKS0117B\obj\Debug\PSKS0117B.exe
 D:\SMS_Ver1.0\SMS\PSKS0117B\obj\Debug\PSKS0117B.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0117B\bin\Debug\PSKS0117B.exe.config
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0117B\bin\Debug\PSKS0117B.exe
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0117B\bin\Debug\PSKS0117B.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0117B\bin\Debug\SMS_BL.dll
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0117B\bin\Debug\SMS_Entity.dll
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0117B\bin\Debug\SMS_DL.dll
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0117B\bin\Debug\SMS_BL.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0117B\bin\Debug\SMS_Entity.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0117B\bin\Debug\SMS_DL.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0117B\obj\Debug\PSKS0117B.csprojAssemblyReference.cache
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0117B\obj\Debug\PSKS0117B.csproj.CoreCompileInputs.cache
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0117B\obj\Debug\PSKS0117B.csproj.CopyComplete
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0117B\obj\Debug\PSKS0117B.exe
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0117B\obj\Debug\PSKS0117B.pdb

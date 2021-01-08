@@ -46,3 +46,17 @@ D:\SMS_Ver1.0\SMS\Sugoraku_Shohinkanri_Import_Console\bin\Debug\SMS_Entity.pdb
 D:\SMS_Ver1.0\SMS\Sugoraku_Shohinkanri_Import_Console\obj\Debug\Sugoraku_Shohinkanri_Import_Console.csprojResolveAssemblyReference.cache
 D:\SMS_Ver1.0\SMS\Sugoraku_Shohinkanri_Import_Console\obj\Debug\Sugoraku_Shohinkanri_Import_Console.exe
 D:\SMS_Ver1.0\SMS\Sugoraku_Shohinkanri_Import_Console\obj\Debug\Sugoraku_Shohinkanri_Import_Console.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\Sugoraku_Shohinkanri_Import_Console\bin\Debug\Sugoraku_Shohinkanri_Import_Console.exe.config
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\Sugoraku_Shohinkanri_Import_Console\bin\Debug\Sugoraku_Shohinkanri_Import_Console.exe
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\Sugoraku_Shohinkanri_Import_Console\bin\Debug\Sugoraku_Shohinkanri_Import_Console.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\Sugoraku_Shohinkanri_Import_Console\bin\Debug\SMS_BL.dll
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\Sugoraku_Shohinkanri_Import_Console\bin\Debug\SMS_DL.dll
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\Sugoraku_Shohinkanri_Import_Console\bin\Debug\SMS_Entity.dll
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\Sugoraku_Shohinkanri_Import_Console\bin\Debug\SMS_BL.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\Sugoraku_Shohinkanri_Import_Console\bin\Debug\SMS_DL.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\Sugoraku_Shohinkanri_Import_Console\bin\Debug\SMS_Entity.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\Sugoraku_Shohinkanri_Import_Console\obj\Debug\Sugoraku_Shohinkanri_Import_Console.csprojAssemblyReference.cache
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\Sugoraku_Shohinkanri_Import_Console\obj\Debug\Sugoraku_Shohinkanri_Import_Console.csproj.CoreCompileInputs.cache
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\Sugoraku_Shohinkanri_Import_Console\obj\Debug\Sugoraku_Shohinkanri_Import_Console.csproj.CopyComplete
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\Sugoraku_Shohinkanri_Import_Console\obj\Debug\Sugoraku_Shohinkanri_Import_Console.exe
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\Sugoraku_Shohinkanri_Import_Console\obj\Debug\Sugoraku_Shohinkanri_Import_Console.pdb

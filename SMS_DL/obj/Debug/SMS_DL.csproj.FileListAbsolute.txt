@@ -44,3 +44,12 @@ D:\GIT\SMS_Inventory\SMS_DL\obj\Debug\SMS_DL.csproj.CoreCompileInputs.cache
 D:\GIT\SMS_Inventory\SMS_DL\obj\Debug\SMS_DL.csproj.CopyComplete
 D:\GIT\SMS_Inventory\SMS_DL\obj\Debug\SMS_DL.dll
 D:\GIT\SMS_Inventory\SMS_DL\obj\Debug\SMS_DL.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\SMS_DL\bin\Debug\SMS_DL.dll
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\SMS_DL\bin\Debug\SMS_DL.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\SMS_DL\bin\Debug\SMS_Entity.dll
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\SMS_DL\bin\Debug\SMS_Entity.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\SMS_DL\obj\Debug\SMS_DL.csprojAssemblyReference.cache
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\SMS_DL\obj\Debug\SMS_DL.csproj.CoreCompileInputs.cache
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\SMS_DL\obj\Debug\SMS_DL.csproj.CopyComplete
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\SMS_DL\obj\Debug\SMS_DL.dll
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\SMS_DL\obj\Debug\SMS_DL.pdb

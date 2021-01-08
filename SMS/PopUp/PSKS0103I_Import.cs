@@ -92,9 +92,16 @@ namespace SMS.PopUp
 
                 DataTable dtImport = new DataTable();
 
+                mzde = new MakerZaiko_D_Entity();
+                mzde.PatternCD = patternCD;
+                DataTable dtPattern = psks0103ibl.M_MakerZaiko_D_Select(mzde);
+
                 if (ext.Equals(".csv"))
                 {
-                    dtImport = CSVToTable(filePath);
+                    if (patternCD=="011") /// for sankyo_ maker by etz
+                     dtImport = CSVToTable(filePath, dtPattern.Rows.Count);
+                    else
+                        dtImport = CSVToTable(filePath);
                 }
                 else if (ext.Equals(".xlsx") || ext.Equals(".xls"))
                 {
@@ -125,9 +132,7 @@ namespace SMS.PopUp
                 }
                 dtImport.AcceptChanges();
 
-                mzde = new MakerZaiko_D_Entity();
-                mzde.PatternCD = patternCD;
-                DataTable dtPattern = psks0103ibl.M_MakerZaiko_D_Select(mzde);
+                
 
                 if (dtImport.Columns.Count != dtPattern.Rows.Count)
                 {
@@ -242,7 +247,7 @@ namespace SMS.PopUp
             return result.Tables[0];
         }
 
-        public DataTable CSVToTable(string filePath)
+        public DataTable CSVToTable(string filePath,int COL_COUNT=0)
         {
             DataTable csvData = new DataTable();
             int count = 1;
@@ -255,6 +260,22 @@ namespace SMS.PopUp
                     //read column names
                     string[] colFields = csvReader.ReadFields();
                     char c = 'A';
+
+                    //for (int i = 0; i < colFields.Length; i++)
+                    //{
+                    //    colFields[i] = colFields[i].Replace("\"", "");
+                    //}
+
+                    if (COL_COUNT != 0 && colFields.Length != COL_COUNT)
+                    {
+                        int ct = colFields.Count();
+                        while (colFields.Count() > ct - 4)
+                        {
+                            colFields = colFields.Take(colFields.Count() - 1).ToArray();
+                        }
+
+                        
+                    }
 
                     foreach (string column in colFields)
                     {
@@ -275,9 +296,13 @@ namespace SMS.PopUp
                         }
                         else//2
                         {
-                            DataColumn datacolumn = new DataColumn(c++.ToString());
-                            datacolumn.AllowDBNull = true;
-                            csvData.Columns.Add(datacolumn);
+                            //if(!csvData.Columns.Contains("\"\"") || !csvData.Columns.Contains(""))
+                            //{
+                                DataColumn datacolumn = new DataColumn(c++.ToString());
+                                datacolumn.AllowDBNull = true;
+                                csvData.Columns.Add(datacolumn);
+                           // }
+                                
                         }
                     }
 
