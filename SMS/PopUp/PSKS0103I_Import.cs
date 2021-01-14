@@ -253,6 +253,17 @@ namespace SMS.PopUp
             int count = 1;
             try
             {
+                //Array lines = File.ReadAllLines(filePath);
+                //var file = File
+                //    .ReadAllLines(filePath, Encoding.GetEncoding(932))
+                //    .SkipWhile(line => string.IsNullOrWhiteSpace(line)) // To be on the safe side
+                //    .Select((line, index) => index == 1 // do we have header? 
+                //        ? line.Replace('\"',' ') // replace '_' with ' '
+                //        : line)                  // keep lines as they are 
+                //    .ToList();                  // Materialization, since we write into the same file
+
+                //File.WriteAllLines(filePath, file, Encoding.GetEncoding(932));
+
                 using (TextFieldParser csvReader = new TextFieldParser(filePath, Encoding.GetEncoding(932), true))
                 {
                     csvReader.SetDelimiters(new string[] { "," });
