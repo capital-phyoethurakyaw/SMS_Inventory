@@ -253,16 +253,22 @@ namespace SMS.PopUp
             int count = 1;
             try
             {
-                //Array lines = File.ReadAllLines(filePath);
-                //var file = File
-                //    .ReadAllLines(filePath, Encoding.GetEncoding(932))
-                //    .SkipWhile(line => string.IsNullOrWhiteSpace(line)) // To be on the safe side
-                //    .Select((line, index) => index == 1 // do we have header? 
-                //        ? line.Replace('\"',' ') // replace '_' with ' '
-                //        : line)                  // keep lines as they are 
-                //    .ToList();                  // Materialization, since we write into the same file
+                int row = System.IO.File.ReadAllLines(filePath).Length;
 
-                //File.WriteAllLines(filePath, file, Encoding.GetEncoding(932));
+                Array lines = File.ReadAllLines(filePath);
+                for(int i=0;i<row;i++)
+                {
+                    var file = File
+                    .ReadAllLines(filePath, Encoding.GetEncoding(932))
+                    .SkipWhile(line => string.IsNullOrWhiteSpace(line)) // To be on the safe side
+                    .Select((line, index) => index == i // do we have header? 
+                        ? line.Replace(",\"\"","") // replace '_' with ' '
+                        : line)                  // keep lines as they are 
+                    .ToList();                  // Materialization, since we write into the same file
+
+                    File.WriteAllLines(filePath, file, Encoding.GetEncoding(932));
+                }
+                
 
                 using (TextFieldParser csvReader = new TextFieldParser(filePath, Encoding.GetEncoding(932), true))
                 {
@@ -277,16 +283,16 @@ namespace SMS.PopUp
                     //    colFields[i] = colFields[i].Replace("\"", "");
                     //}
 
-                    if (COL_COUNT != 0 && colFields.Length != COL_COUNT)
-                    {
-                        int ct = colFields.Count();
-                        while (colFields.Count() > ct - 4)
-                        {
-                            colFields = colFields.Take(colFields.Count() - 1).ToArray();
-                        }
+                    //if (COL_COUNT != 0 && colFields.Length != COL_COUNT)
+                    //{
+                    //    int ct = colFields.Count();
+                    //    while (colFields.Count() > ct - 4)
+                    //    {
+                    //        colFields = colFields.Take(colFields.Count() - 1).ToArray();
+                    //    }
 
                         
-                    }
+                    //}
 
                     foreach (string column in colFields)
                     {

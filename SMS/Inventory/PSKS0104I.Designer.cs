@@ -87,24 +87,21 @@
             this.cboSeason = new SMS.CustomControls.SMS_ComboBox();
             this.ucSupplier = new SMS.CustomControls.UC_Search();
             this.ucBrand = new SMS.CustomControls.UC_Search();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panelBody.SuspendLayout();
             this.panelTitleLeft.SuspendLayout();
             this.panelTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPSK0104I)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelBody
             // 
-            this.panelBody.Controls.Add(this.ucBrand);
-            this.panelBody.Controls.Add(this.ucSupplier);
-            this.panelBody.Controls.Add(this.cboSeason);
-            this.panelBody.Controls.Add(this.cboNendo);
-            this.panelBody.Controls.Add(this.txtInportDate);
+            this.panelBody.Controls.Add(this.panel1);
             this.panelBody.Controls.Add(this.txtZaikoSu);
             this.panelBody.Controls.Add(this.smS_Label19);
             this.panelBody.Controls.Add(this.lblKakuteiMode);
             this.panelBody.Controls.Add(this.smS_Label18);
-            this.panelBody.Controls.Add(this.smS_Label17);
             this.panelBody.Controls.Add(this.smS_Label16);
             this.panelBody.Controls.Add(this.dgvPSK0104I);
             this.panelBody.Controls.Add(this.btnAdd);
@@ -113,29 +110,6 @@
             this.panelBody.Controls.Add(this.smS_Label14);
             this.panelBody.Controls.Add(this.btnMiKakutei);
             this.panelBody.Controls.Add(this.btnKakutei);
-            this.panelBody.Controls.Add(this.btnDisplay);
-            this.panelBody.Controls.Add(this.txtCatalogue);
-            this.panelBody.Controls.Add(this.smS_Label13);
-            this.panelBody.Controls.Add(this.smS_Label12);
-            this.panelBody.Controls.Add(this.ucSKUCD);
-            this.panelBody.Controls.Add(this.chkZaikoSuZero);
-            this.panelBody.Controls.Add(this.chkJANCDcut);
-            this.panelBody.Controls.Add(this.smS_Label11);
-            this.panelBody.Controls.Add(this.smS_Label10);
-            this.panelBody.Controls.Add(this.lbl1);
-            this.panelBody.Controls.Add(this.smS_Label8);
-            this.panelBody.Controls.Add(this.rdoMakerItemCD);
-            this.panelBody.Controls.Add(this.rdoItem);
-            this.panelBody.Controls.Add(this.chkSearch);
-            this.panelBody.Controls.Add(this.ucJANCD1);
-            this.panelBody.Controls.Add(this.ucMakerItem);
-            this.panelBody.Controls.Add(this.ucITEM);
-            this.panelBody.Controls.Add(this.smS_Label7);
-            this.panelBody.Controls.Add(this.smS_Label6);
-            this.panelBody.Controls.Add(this.smS_Label5);
-            this.panelBody.Controls.Add(this.smS_Label4);
-            this.panelBody.Controls.Add(this.smS_Label3);
-            this.panelBody.Controls.Add(this.smS_Label2);
             this.panelBody.Location = new System.Drawing.Point(0, 36);
             this.panelBody.Size = new System.Drawing.Size(1884, 885);
             this.panelBody.TabIndex = 0;
@@ -237,7 +211,7 @@
             this.btnDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDisplay.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDisplay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDisplay.Location = new System.Drawing.Point(1237, 137);
+            this.btnDisplay.Location = new System.Drawing.Point(1231, 129);
             this.btnDisplay.Name = "btnDisplay";
             this.btnDisplay.Size = new System.Drawing.Size(100, 30);
             this.btnDisplay.TabIndex = 10;
@@ -249,7 +223,7 @@
             // 
             this.txtCatalogue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCatalogue.Decimalplace = ((byte)(0));
-            this.txtCatalogue.Location = new System.Drawing.Point(674, 42);
+            this.txtCatalogue.Location = new System.Drawing.Point(668, 34);
             this.txtCatalogue.MaxLength = 30;
             this.txtCatalogue.Name = "txtCatalogue";
             this.txtCatalogue.Size = new System.Drawing.Size(220, 19);
@@ -263,7 +237,7 @@
             this.smS_Label13.AutoSize = true;
             this.smS_Label13.BackColor = System.Drawing.Color.Transparent;
             this.smS_Label13.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.smS_Label13.Location = new System.Drawing.Point(1109, 45);
+            this.smS_Label13.Location = new System.Drawing.Point(1103, 37);
             this.smS_Label13.Name = "smS_Label13";
             this.smS_Label13.Size = new System.Drawing.Size(57, 12);
             this.smS_Label13.TabIndex = 60;
@@ -274,7 +248,7 @@
             this.smS_Label12.AutoSize = true;
             this.smS_Label12.BackColor = System.Drawing.Color.Transparent;
             this.smS_Label12.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.smS_Label12.Location = new System.Drawing.Point(927, 45);
+            this.smS_Label12.Location = new System.Drawing.Point(921, 37);
             this.smS_Label12.Name = "smS_Label12";
             this.smS_Label12.Size = new System.Drawing.Size(31, 12);
             this.smS_Label12.TabIndex = 58;
@@ -284,7 +258,7 @@
             // 
             this.ucSKUCD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(224)))), ((int)(((byte)(180)))));
             this.ucSKUCD.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ucSKUCD.Location = new System.Drawing.Point(674, 65);
+            this.ucSKUCD.Location = new System.Drawing.Point(668, 57);
             this.ucSKUCD.Margin = new System.Windows.Forms.Padding(0);
             this.ucSKUCD.Name = "ucSKUCD";
             this.ucSKUCD.Size = new System.Drawing.Size(255, 23);
@@ -306,7 +280,7 @@
             // 
             this.chkZaikoSuZero.AutoSize = true;
             this.chkZaikoSuZero.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkZaikoSuZero.Location = new System.Drawing.Point(1196, 16);
+            this.chkZaikoSuZero.Location = new System.Drawing.Point(1190, 8);
             this.chkZaikoSuZero.Name = "chkZaikoSuZero";
             this.chkZaikoSuZero.Size = new System.Drawing.Size(141, 16);
             this.chkZaikoSuZero.TabIndex = 56;
@@ -317,7 +291,7 @@
             // 
             this.chkJANCDcut.AutoSize = true;
             this.chkJANCDcut.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkJANCDcut.Location = new System.Drawing.Point(1066, 16);
+            this.chkJANCDcut.Location = new System.Drawing.Point(1060, 8);
             this.chkJANCDcut.Name = "chkJANCDcut";
             this.chkJANCDcut.Size = new System.Drawing.Size(124, 16);
             this.chkJANCDcut.TabIndex = 55;
@@ -329,7 +303,7 @@
             this.smS_Label11.AutoSize = true;
             this.smS_Label11.BackColor = System.Drawing.Color.Transparent;
             this.smS_Label11.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.smS_Label11.Location = new System.Drawing.Point(1003, 17);
+            this.smS_Label11.Location = new System.Drawing.Point(997, 9);
             this.smS_Label11.Name = "smS_Label11";
             this.smS_Label11.Size = new System.Drawing.Size(57, 12);
             this.smS_Label11.TabIndex = 54;
@@ -340,7 +314,7 @@
             this.smS_Label10.AutoSize = true;
             this.smS_Label10.BackColor = System.Drawing.Color.Transparent;
             this.smS_Label10.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.smS_Label10.Location = new System.Drawing.Point(628, 71);
+            this.smS_Label10.Location = new System.Drawing.Point(622, 63);
             this.smS_Label10.Name = "smS_Label10";
             this.smS_Label10.Size = new System.Drawing.Size(40, 12);
             this.smS_Label10.TabIndex = 53;
@@ -351,7 +325,7 @@
             this.lbl1.AutoSize = true;
             this.lbl1.BackColor = System.Drawing.Color.Transparent;
             this.lbl1.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.lbl1.Location = new System.Drawing.Point(611, 45);
+            this.lbl1.Location = new System.Drawing.Point(605, 37);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(57, 12);
             this.lbl1.TabIndex = 52;
@@ -362,7 +336,7 @@
             this.smS_Label8.AutoSize = true;
             this.smS_Label8.BackColor = System.Drawing.Color.Transparent;
             this.smS_Label8.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.smS_Label8.Location = new System.Drawing.Point(624, 18);
+            this.smS_Label8.Location = new System.Drawing.Point(618, 10);
             this.smS_Label8.Name = "smS_Label8";
             this.smS_Label8.Size = new System.Drawing.Size(44, 12);
             this.smS_Label8.TabIndex = 51;
@@ -372,7 +346,7 @@
             // 
             this.rdoMakerItemCD.AutoSize = true;
             this.rdoMakerItemCD.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoMakerItemCD.Location = new System.Drawing.Point(268, 145);
+            this.rdoMakerItemCD.Location = new System.Drawing.Point(262, 137);
             this.rdoMakerItemCD.Name = "rdoMakerItemCD";
             this.rdoMakerItemCD.Size = new System.Drawing.Size(115, 16);
             this.rdoMakerItemCD.TabIndex = 12;
@@ -384,7 +358,7 @@
             this.rdoItem.AutoSize = true;
             this.rdoItem.Checked = true;
             this.rdoItem.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoItem.Location = new System.Drawing.Point(211, 145);
+            this.rdoItem.Location = new System.Drawing.Point(205, 137);
             this.rdoItem.Name = "rdoItem";
             this.rdoItem.Size = new System.Drawing.Size(51, 16);
             this.rdoItem.TabIndex = 11;
@@ -396,7 +370,7 @@
             // 
             this.chkSearch.AutoSize = true;
             this.chkSearch.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkSearch.Location = new System.Drawing.Point(142, 145);
+            this.chkSearch.Location = new System.Drawing.Point(136, 137);
             this.chkSearch.Name = "chkSearch";
             this.chkSearch.Size = new System.Drawing.Size(57, 16);
             this.chkSearch.TabIndex = 11;
@@ -408,7 +382,7 @@
             // 
             this.ucJANCD1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(224)))), ((int)(((byte)(180)))));
             this.ucJANCD1.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ucJANCD1.Location = new System.Drawing.Point(138, 115);
+            this.ucJANCD1.Location = new System.Drawing.Point(132, 107);
             this.ucJANCD1.Margin = new System.Windows.Forms.Padding(0);
             this.ucJANCD1.Name = "ucJANCD1";
             this.ucJANCD1.Size = new System.Drawing.Size(980, 23);
@@ -430,7 +404,7 @@
             // 
             this.ucMakerItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(224)))), ((int)(((byte)(180)))));
             this.ucMakerItem.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ucMakerItem.Location = new System.Drawing.Point(138, 90);
+            this.ucMakerItem.Location = new System.Drawing.Point(132, 82);
             this.ucMakerItem.Margin = new System.Windows.Forms.Padding(0);
             this.ucMakerItem.Name = "ucMakerItem";
             this.ucMakerItem.Size = new System.Drawing.Size(255, 23);
@@ -452,7 +426,7 @@
             // 
             this.ucITEM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(224)))), ((int)(((byte)(180)))));
             this.ucITEM.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ucITEM.Location = new System.Drawing.Point(138, 65);
+            this.ucITEM.Location = new System.Drawing.Point(132, 57);
             this.ucITEM.Margin = new System.Windows.Forms.Padding(0);
             this.ucITEM.Name = "ucITEM";
             this.ucITEM.Size = new System.Drawing.Size(255, 23);
@@ -475,7 +449,7 @@
             this.smS_Label7.AutoSize = true;
             this.smS_Label7.BackColor = System.Drawing.Color.Transparent;
             this.smS_Label7.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.smS_Label7.Location = new System.Drawing.Point(77, 147);
+            this.smS_Label7.Location = new System.Drawing.Point(71, 139);
             this.smS_Label7.Name = "smS_Label7";
             this.smS_Label7.Size = new System.Drawing.Size(57, 12);
             this.smS_Label7.TabIndex = 42;
@@ -486,7 +460,7 @@
             this.smS_Label6.AutoSize = true;
             this.smS_Label6.BackColor = System.Drawing.Color.Transparent;
             this.smS_Label6.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.smS_Label6.Location = new System.Drawing.Point(94, 121);
+            this.smS_Label6.Location = new System.Drawing.Point(88, 113);
             this.smS_Label6.Name = "smS_Label6";
             this.smS_Label6.Size = new System.Drawing.Size(40, 12);
             this.smS_Label6.TabIndex = 41;
@@ -497,7 +471,7 @@
             this.smS_Label5.AutoSize = true;
             this.smS_Label5.BackColor = System.Drawing.Color.Transparent;
             this.smS_Label5.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.smS_Label5.Location = new System.Drawing.Point(38, 96);
+            this.smS_Label5.Location = new System.Drawing.Point(32, 88);
             this.smS_Label5.Name = "smS_Label5";
             this.smS_Label5.Size = new System.Drawing.Size(97, 12);
             this.smS_Label5.TabIndex = 40;
@@ -508,7 +482,7 @@
             this.smS_Label4.AutoSize = true;
             this.smS_Label4.BackColor = System.Drawing.Color.Transparent;
             this.smS_Label4.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.smS_Label4.Location = new System.Drawing.Point(101, 71);
+            this.smS_Label4.Location = new System.Drawing.Point(95, 63);
             this.smS_Label4.Name = "smS_Label4";
             this.smS_Label4.Size = new System.Drawing.Size(33, 12);
             this.smS_Label4.TabIndex = 39;
@@ -519,7 +493,7 @@
             this.smS_Label3.AutoSize = true;
             this.smS_Label3.BackColor = System.Drawing.Color.Transparent;
             this.smS_Label3.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.smS_Label3.Location = new System.Drawing.Point(78, 44);
+            this.smS_Label3.Location = new System.Drawing.Point(72, 36);
             this.smS_Label3.Name = "smS_Label3";
             this.smS_Label3.Size = new System.Drawing.Size(57, 12);
             this.smS_Label3.TabIndex = 38;
@@ -530,7 +504,7 @@
             this.smS_Label2.AutoSize = true;
             this.smS_Label2.BackColor = System.Drawing.Color.Transparent;
             this.smS_Label2.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.smS_Label2.Location = new System.Drawing.Point(25, 19);
+            this.smS_Label2.Location = new System.Drawing.Point(19, 11);
             this.smS_Label2.Name = "smS_Label2";
             this.smS_Label2.Size = new System.Drawing.Size(110, 12);
             this.smS_Label2.TabIndex = 37;
@@ -707,7 +681,7 @@
             this.smS_Label17.BackColor = System.Drawing.Color.Transparent;
             this.smS_Label17.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.smS_Label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(86)))), ((int)(((byte)(35)))));
-            this.smS_Label17.Location = new System.Drawing.Point(398, 148);
+            this.smS_Label17.Location = new System.Drawing.Point(392, 140);
             this.smS_Label17.Name = "smS_Label17";
             this.smS_Label17.Size = new System.Drawing.Size(425, 12);
             this.smS_Label17.TabIndex = 14;
@@ -762,10 +736,12 @@
             // 
             this.txtInportDate.CKM_Reqired = false;
             this.txtInportDate.CKM_Type = CKM_Controls.CKM_TextBox.Type.Date;
-            this.txtInportDate.Location = new System.Drawing.Point(674, 14);
+            this.txtInportDate.DecimalPlace = 0;
+            this.txtInportDate.Location = new System.Drawing.Point(668, 6);
             this.txtInportDate.Name = "txtInportDate";
             this.txtInportDate.Size = new System.Drawing.Size(100, 19);
             this.txtInportDate.TabIndex = 1;
+            this.txtInportDate.UseMinus = true;
             this.txtInportDate.UseThousandSeparator = true;
             // 
             // cboNendo
@@ -775,7 +751,7 @@
             this.cboNendo.Cbo_Type = SMS.CustomControls.SMS_ComboBox.cbo_Type.m_nendo;
             this.cboNendo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cboNendo.FormattingEnabled = true;
-            this.cboNendo.Location = new System.Drawing.Point(971, 41);
+            this.cboNendo.Location = new System.Drawing.Point(965, 33);
             this.cboNendo.Name = "cboNendo";
             this.cboNendo.Size = new System.Drawing.Size(121, 20);
             this.cboNendo.TabIndex = 4;
@@ -787,7 +763,7 @@
             this.cboSeason.Cbo_Type = SMS.CustomControls.SMS_ComboBox.cbo_Type.m_season;
             this.cboSeason.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cboSeason.FormattingEnabled = true;
-            this.cboSeason.Location = new System.Drawing.Point(1172, 41);
+            this.cboSeason.Location = new System.Drawing.Point(1166, 33);
             this.cboSeason.Name = "cboSeason";
             this.cboSeason.Size = new System.Drawing.Size(121, 20);
             this.cboSeason.TabIndex = 5;
@@ -796,7 +772,7 @@
             // 
             this.ucSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(224)))), ((int)(((byte)(180)))));
             this.ucSupplier.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ucSupplier.Location = new System.Drawing.Point(138, 13);
+            this.ucSupplier.Location = new System.Drawing.Point(132, 5);
             this.ucSupplier.Margin = new System.Windows.Forms.Padding(0);
             this.ucSupplier.Name = "ucSupplier";
             this.ucSupplier.Size = new System.Drawing.Size(450, 25);
@@ -819,7 +795,7 @@
             // 
             this.ucBrand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(224)))), ((int)(((byte)(180)))));
             this.ucBrand.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ucBrand.Location = new System.Drawing.Point(138, 38);
+            this.ucBrand.Location = new System.Drawing.Point(132, 30);
             this.ucBrand.Margin = new System.Windows.Forms.Padding(0);
             this.ucBrand.Name = "ucBrand";
             this.ucBrand.Size = new System.Drawing.Size(500, 23);
@@ -836,6 +812,42 @@
             this.ucBrand.UC_Type = SMS.CustomControls.UC_Search.Type.Brand;
             this.ucBrand.Enter += new System.EventHandler(this.uc_Enter);
             this.ucBrand.Leave += new System.EventHandler(this.uc_Leave);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.smS_Label2);
+            this.panel1.Controls.Add(this.ucBrand);
+            this.panel1.Controls.Add(this.smS_Label3);
+            this.panel1.Controls.Add(this.ucSupplier);
+            this.panel1.Controls.Add(this.smS_Label4);
+            this.panel1.Controls.Add(this.cboSeason);
+            this.panel1.Controls.Add(this.smS_Label5);
+            this.panel1.Controls.Add(this.cboNendo);
+            this.panel1.Controls.Add(this.smS_Label6);
+            this.panel1.Controls.Add(this.txtInportDate);
+            this.panel1.Controls.Add(this.smS_Label7);
+            this.panel1.Controls.Add(this.ucITEM);
+            this.panel1.Controls.Add(this.ucMakerItem);
+            this.panel1.Controls.Add(this.ucJANCD1);
+            this.panel1.Controls.Add(this.chkSearch);
+            this.panel1.Controls.Add(this.smS_Label17);
+            this.panel1.Controls.Add(this.rdoItem);
+            this.panel1.Controls.Add(this.rdoMakerItemCD);
+            this.panel1.Controls.Add(this.smS_Label8);
+            this.panel1.Controls.Add(this.lbl1);
+            this.panel1.Controls.Add(this.smS_Label10);
+            this.panel1.Controls.Add(this.smS_Label11);
+            this.panel1.Controls.Add(this.chkJANCDcut);
+            this.panel1.Controls.Add(this.chkZaikoSuZero);
+            this.panel1.Controls.Add(this.ucSKUCD);
+            this.panel1.Controls.Add(this.btnDisplay);
+            this.panel1.Controls.Add(this.smS_Label12);
+            this.panel1.Controls.Add(this.txtCatalogue);
+            this.panel1.Controls.Add(this.smS_Label13);
+            this.panel1.Location = new System.Drawing.Point(6, 7);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1400, 165);
+            this.panel1.TabIndex = 80;
             // 
             // frmPSKS0104I
             // 
@@ -855,6 +867,8 @@
             this.panelTitleLeft.ResumeLayout(false);
             this.panelTitle.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPSK0104I)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -913,5 +927,6 @@
         private CustomControls.SMS_ComboBox cboNendo;
         private CustomControls.UC_Search ucSupplier;
         private CustomControls.UC_Search ucBrand;
+        private System.Windows.Forms.Panel panel1;
     }
 }

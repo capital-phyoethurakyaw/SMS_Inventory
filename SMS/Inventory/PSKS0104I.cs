@@ -182,7 +182,10 @@ namespace SMS.Inventory
                 //dt_PSKS0104I = new DataTable();
                 dt_PSKS0104I = psks0104ibl.PSKS0104I_Select(ise);
                 dgvPSK0104I.DataSource = dt_PSKS0104I;
-                
+
+                DisabledCtrl();
+
+
             }
             else
             {
@@ -193,6 +196,8 @@ namespace SMS.Inventory
         }
 
         #endregion
+
+
 
         /// <summary>
         /// Get Searching Data
@@ -358,11 +363,16 @@ namespace SMS.Inventory
                     string DateAndTime = System.DateTime.Now.ToString();
                     if (ErrorCheck2())
                     {
-                        tmze = GetTmze();
-                        lle = GetLogData();
-                        psks0104ibl.psks0104I_InsertUpdate(tmze, lle);
-                        Clear();
-                        dt_PSKS0104I.AcceptChanges();
+                        if( dgvPSK0104I.Rows.Count>0)
+                        {
+                            tmze = GetTmze();
+                            lle = GetLogData();
+                            psks0104ibl.psks0104I_InsertUpdate(tmze, lle);
+                            EnabledCtrl();
+                            Clear();
+                            dt_PSKS0104I.AcceptChanges();
+                        }
+                        
                     }
                     else
                     {
@@ -409,6 +419,55 @@ namespace SMS.Inventory
             return lle;
         }
 
+        private void DisabledCtrl()
+        {
+            ucSupplier.Disabled();
+            ucBrand.Disabled();
+            ucITEM.Disabled();
+            ucMakerItem.Disabled();
+            ucJANCD1.Disabled();
+
+            chkSearch.Enabled = false;
+            rdoItem.Enabled = false;
+            rdoMakerItemCD.Enabled = false;
+            chkJANCDcut.Enabled = false;
+            chkZaikoSuZero.Enabled = false;
+
+            txtCatalogue.Enabled = false;
+            txtInportDate.Enabled = false;
+            ucSKUCD.Disabled();
+
+            cboNendo.Enabled = false;
+            cboSeason.Enabled = false;
+
+            btnDisplay.Enabled = false;
+        }
+
+        private void EnabledCtrl()
+        {
+            ucSupplier.Enable();
+            ucBrand.Enable();
+            ucITEM.Enable();
+            ucMakerItem.Enable();
+            ucJANCD1.Enable();
+
+            chkSearch.Enabled = true;
+            rdoItem.Enabled = true;
+            rdoMakerItemCD.Enabled = true;
+            chkJANCDcut.Enabled = true;
+            chkZaikoSuZero.Enabled = true;
+
+            txtCatalogue.Enabled = true;
+            txtInportDate.Enabled = true;
+            ucSKUCD.Enable();
+
+            cboNendo.Enabled = true;
+            cboSeason.Enabled = true;
+
+            btnDisplay.Enabled = true;
+        }
+
+
         /// <summary>
         /// Clear Data
         /// </summary>
@@ -453,6 +512,8 @@ namespace SMS.Inventory
 
             //dt_PSKS0104I.Clear();
             ucSupplier.SetFocus();
+
+            EnabledCtrl();
 
             lblKakuteiMode.Text = string.Empty;
             lblKakuteiMode.BackColor = Color.FromArgb(0, 176, 240);
