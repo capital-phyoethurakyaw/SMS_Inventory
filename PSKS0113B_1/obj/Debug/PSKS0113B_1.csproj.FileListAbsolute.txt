@@ -58,3 +58,17 @@ D:\SMS_Ver1.0\SMS\PSKS0113B_1\bin\Debug\SMS_DL.pdb
 D:\SMS_Ver1.0\SMS\PSKS0113B_1\obj\Debug\PSKS0113B_1.csprojResolveAssemblyReference.cache
 D:\SMS_Ver1.0\SMS\PSKS0113B_1\obj\Debug\PSKS0113B_1.exe
 D:\SMS_Ver1.0\SMS\PSKS0113B_1\obj\Debug\PSKS0113B_1.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0113B_1\bin\Debug\PSKS0113B_1.exe.config
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0113B_1\bin\Debug\PSKS0113B_1.exe
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0113B_1\bin\Debug\PSKS0113B_1.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0113B_1\bin\Debug\SMS_BL.dll
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0113B_1\bin\Debug\SMS_Entity.dll
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0113B_1\bin\Debug\SMS_DL.dll
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0113B_1\bin\Debug\SMS_BL.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0113B_1\bin\Debug\SMS_Entity.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0113B_1\bin\Debug\SMS_DL.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0113B_1\obj\Debug\PSKS0113B_1.csprojAssemblyReference.cache
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0113B_1\obj\Debug\PSKS0113B_1.csproj.CoreCompileInputs.cache
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0113B_1\obj\Debug\PSKS0113B_1.csproj.CopyComplete
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0113B_1\obj\Debug\PSKS0113B_1.exe
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\PSKS0113B_1\obj\Debug\PSKS0113B_1.pdb

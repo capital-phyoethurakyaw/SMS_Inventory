@@ -57,3 +57,17 @@ D:\SMS_Ver1.0\SMS\CSVDownload\bin\Debug\SMS_DL.pdb
 D:\SMS_Ver1.0\SMS\CSVDownload\obj\Debug\CSVDownload.csprojResolveAssemblyReference.cache
 D:\SMS_Ver1.0\SMS\CSVDownload\obj\Debug\CSVDownload.exe
 D:\SMS_Ver1.0\SMS\CSVDownload\obj\Debug\CSVDownload.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\CSVDownload\bin\Debug\CSVDownload.exe.config
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\CSVDownload\bin\Debug\CSVDownload.exe
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\CSVDownload\bin\Debug\CSVDownload.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\CSVDownload\bin\Debug\SMS_BL.dll
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\CSVDownload\bin\Debug\SMS_Entity.dll
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\CSVDownload\bin\Debug\SMS_DL.dll
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\CSVDownload\bin\Debug\SMS_BL.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\CSVDownload\bin\Debug\SMS_Entity.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\CSVDownload\bin\Debug\SMS_DL.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\CSVDownload\obj\Debug\CSVDownload.csprojAssemblyReference.cache
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\CSVDownload\obj\Debug\CSVDownload.csproj.CoreCompileInputs.cache
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\CSVDownload\obj\Debug\CSVDownload.csproj.CopyComplete
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\CSVDownload\obj\Debug\CSVDownload.exe
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\CSVDownload\obj\Debug\CSVDownload.pdb

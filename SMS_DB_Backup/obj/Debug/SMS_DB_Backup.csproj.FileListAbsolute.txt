@@ -12,3 +12,7 @@ D:\SMS_Ver1.0\SMS\SMS_DB_Backup\obj\Debug\SMS_DB_Backup.exe.manifest
 D:\SMS_Ver1.0\SMS\SMS_DB_Backup\obj\Debug\SMS_DB_Backup.application
 D:\SMS_Ver1.0\SMS\SMS_DB_Backup\obj\Debug\SMS_DB_Backup.exe
 D:\SMS_Ver1.0\SMS\SMS_DB_Backup\obj\Debug\SMS_DB_Backup.pdb
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\SMS_DB_Backup\obj\Debug\SMS_DB_Backup.csprojAssemblyReference.cache
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\SMS_DB_Backup\obj\Debug\SMS_DB_Backup.csproj.CoreCompileInputs.cache
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\SMS_DB_Backup\obj\Debug\SMS_DB_Backup.exe
+C:\MyData\Projects\SMS_Ver1_GitHub\SMS_V1\SMS_DB_Backup\obj\Debug\SMS_DB_Backup.pdb

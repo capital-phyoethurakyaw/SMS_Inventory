@@ -294,9 +294,17 @@ namespace SMS.Inventory
                 string qty = tze.CapitalZaiko;
                 ise = GetData();
                 dt_PSKS0110S = psks0110sbl.PSKS0110S_Select(ise);
-                dgvPSKS0110S.DataSource = dt_PSKS0110S;
-                Cursor.Current = Cursors.Default;
-                btnDisplay.Focus();
+                if(dt_PSKS0110S !=null || dt_PSKS0110S.Rows.Count>0)
+                {
+                    dgvPSKS0110S.DataSource = dt_PSKS0110S;
+                    Cursor.Current = Cursors.Default;
+                    btnDisplay.Focus();
+                }
+                else
+                {
+                    DSP_MSG("E128", string.Empty, string.Empty, string.Empty, string.Empty, string.Empty);
+                }
+                
             }
         }
 
