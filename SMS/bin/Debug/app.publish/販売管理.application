@@ -14,7 +14,7 @@
     <framework targetVersion="4.6" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="販売管理.exe.manifest" size="21817">
+    <dependentAssembly dependencyType="install" codebase="Application Files\販売管理_2_2_0_54\販売管理.exe.manifest" size="21817">
       <assemblyIdentity name="販売管理.exe" version="2.2.0.54" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>

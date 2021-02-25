@@ -285,7 +285,7 @@ namespace SMS.Inventory
         /// Display Data for GridView
         /// repaied by PTK 02182019
         /// </summary>
-        private  void DisplayData() 
+        private void DisplayData()
         {
             if (ErrorCheck())
             {
@@ -294,8 +294,11 @@ namespace SMS.Inventory
                 string qty = tze.CapitalZaiko;
                 ise = GetData();
                 dt_PSKS0110S = psks0110sbl.PSKS0110S_Select(ise);
-                if(dt_PSKS0110S !=null || dt_PSKS0110S.Rows.Count>0)
+
+                if (dt_PSKS0110S.Rows.Count > 0)
                 {
+                    //if(dt_PSKS0110S !=null || dt_PSKS0110S.Rows.Count>0)
+                    //{
                     dgvPSKS0110S.DataSource = dt_PSKS0110S;
                     Cursor.Current = Cursors.Default;
                     btnDisplay.Focus();
@@ -304,7 +307,7 @@ namespace SMS.Inventory
                 {
                     DSP_MSG("E128", string.Empty, string.Empty, string.Empty, string.Empty, string.Empty);
                 }
-                
+
             }
         }
 
@@ -381,7 +384,8 @@ namespace SMS.Inventory
         {
             if (e.KeyCode == Keys.F11)
             {
-                DisplayData();
+
+                    DisplayData();
             }
         }
 
