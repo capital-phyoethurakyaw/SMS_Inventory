@@ -49,6 +49,7 @@ namespace SMS_BL
             tmze.InportDateTime = lle.OperateDate = System.DateTime.Now.ToString();
             if (tmze.dt1 != null)
             {
+                tmze.dt1.Columns.Remove("vm_hanbai_shohin");
                 tmze.xml = DataTableToXml(tmze.dt1);
 
                 if (!tmzdl.T_MakerZaiko_Update(tmze))

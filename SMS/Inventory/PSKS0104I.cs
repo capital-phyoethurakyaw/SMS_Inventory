@@ -85,6 +85,9 @@ namespace SMS.Inventory
 
             cboNendo.Bind();
             cboSeason.Bind();
+            ucSupplier.SetFocus();
+
+
         }
 
         /// <summary>
