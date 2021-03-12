@@ -766,7 +766,7 @@ namespace SMS.Inventory
                     ucSupplier.SetFocus();
                     return false;
                 }
-                else if (!psks0103ibl.MakerBrandSelect("MakerCD", "M_MakerBrand", "Where MakerCD='" + ucSupplier.UC_Code + "'"))
+                else if (!psks0103ibl.MakerBrandSelect("MakerCD", "M_MakerBrand", "Where DataSourseMakerCD ='" + ucSupplier.UC_Code + "'"))
                 {
                     DSP_MSG("E101", string.Empty, string.Empty, string.Empty, string.Empty, string.Empty);
                     ucSupplier.SetFocus();

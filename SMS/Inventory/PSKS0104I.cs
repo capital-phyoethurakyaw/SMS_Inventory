@@ -31,7 +31,7 @@ namespace SMS.Inventory
         /// <summary>
         /// Add ComboBox Data
         /// </summary>
-        private class Item 
+        private class Item
         {
             public string Value;
             public string Code;
@@ -54,7 +54,7 @@ namespace SMS.Inventory
 
         public frmPSKS0104I(Login_Info loginInfo)
             : base(loginInfo)
-        {            
+        {
             InitializeComponent();
             this.loginInfo = loginInfo;
         }
@@ -79,15 +79,15 @@ namespace SMS.Inventory
             FunctionButtonDisabled(8);
             FunctionButtonDisabled(10);
             FunctionButtonDisabled(11);
+            FunctionButtonDisabled(12);
 
             dgvPSK0104I.EnabledColumn("colKakuteiZaikoSu,colNouki");
             dgvPSK0104I.DisabledSorting();
 
             cboNendo.Bind();
             cboSeason.Bind();
+
             ucSupplier.SetFocus();
-
-
         }
 
         /// <summary>
@@ -151,7 +151,7 @@ namespace SMS.Inventory
         }
 
         #endregion
-  
+
         #region Searching
         /// <summary>
         /// Searching
@@ -178,7 +178,7 @@ namespace SMS.Inventory
         {
             if (!string.IsNullOrWhiteSpace(ucSupplier.UC_Code))
             {
-                
+
                 Cursor.Current = Cursors.WaitCursor;
                 DataTable dtmakerinput = new DataTable();
                 ise = GetData();
@@ -214,7 +214,7 @@ namespace SMS.Inventory
                 ise.InportDate = txtInportDate.Text;
             ise.Zaiko0 = chkZaikoSuZero.Checked ? "1" : string.Empty;
             ise.FirstInport = chkJANCDcut.Checked ? "1" : string.Empty;
-            ise.brand = ucBrand.UC_Code ;
+            ise.brand = ucBrand.UC_Code;
             ise.catalog = txtCatalogue.Text;
             ise.nendo = cboNendo.SelectedValue.ToString();
             ise.season = cboSeason.SelectedValue.ToString();
@@ -246,13 +246,13 @@ namespace SMS.Inventory
                 {
                     dr.Cells["colKakuteiZaikoSu"].Value = 0;
                 }
-                if (Convert.ToInt32(dr.Cells["colKakuteiZaikoSu"].Value.ToString ().Replace (",","")) < 0)
+                if (Convert.ToInt32(dr.Cells["colKakuteiZaikoSu"].Value.ToString().Replace(",", "")) < 0)
                 {
                     DSP_MSG("E109", string.Empty, string.Empty, string.Empty, string.Empty, string.Empty);
                     dgvPSK0104I.CurrentCell = dgvPSK0104I[dr.Cells["colKakuteiZaikoSu"].ColumnIndex, dr.Index];
                     return false;
                 }
-                
+
             }
             if (string.IsNullOrWhiteSpace(ucSupplier.UC_Code) || string.IsNullOrWhiteSpace(ucSupplier.UC_Name))
             {
@@ -262,7 +262,7 @@ namespace SMS.Inventory
 
             return true;
         }
-        
+
         #region Add new record to Gridview
         private void F10()
         {
@@ -317,7 +317,7 @@ namespace SMS.Inventory
                 {
                     DataTable dt = new DataTable();
                     dt = psks0104ibl.JANCD_ExistsCheck(ucJANCD2.UC_Code);    //Check Exist in Sugoraku
-                    if (dt.Rows.Count <= 0 )
+                    if (dt.Rows.Count <= 0)
                     {
                         DSP_MSG("E101", string.Empty, string.Empty, string.Empty, string.Empty, string.Empty);
                         return false;
@@ -366,7 +366,7 @@ namespace SMS.Inventory
                     string DateAndTime = System.DateTime.Now.ToString();
                     if (ErrorCheck2())
                     {
-                        if( dgvPSK0104I.Rows.Count>0)
+                        if (dgvPSK0104I.Rows.Count > 0)
                         {
                             tmze = GetTmze();
                             lle = GetLogData();
@@ -375,7 +375,7 @@ namespace SMS.Inventory
                             Clear();
                             dt_PSKS0104I.AcceptChanges();
                         }
-                        
+
                     }
                     else
                     {
@@ -425,49 +425,51 @@ namespace SMS.Inventory
         private void DisabledCtrl()
         {
             ucSupplier.Disabled();
-            ucBrand.Disabled();
-            ucITEM.Disabled();
-            ucMakerItem.Disabled();
-            ucJANCD1.Disabled();
+            //ucBrand.Disabled();
+            //ucITEM.Disabled();
+            //ucMakerItem.Disabled();
+            //ucJANCD1.Disabled();
 
-            chkSearch.Enabled = false;
-            rdoItem.Enabled = false;
-            rdoMakerItemCD.Enabled = false;
-            chkJANCDcut.Enabled = false;
-            chkZaikoSuZero.Enabled = false;
+            //chkSearch.Enabled = false;
+            //rdoItem.Enabled = false;
+            //rdoMakerItemCD.Enabled = false;
+            //chkJANCDcut.Enabled = false;
+            //chkZaikoSuZero.Enabled = false;
 
-            txtCatalogue.Enabled = false;
-            txtInportDate.Enabled = false;
-            ucSKUCD.Disabled();
+            //txtCatalogue.Enabled = false;
+            //txtInportDate.Enabled = false;
+            //ucSKUCD.Disabled();
 
-            cboNendo.Enabled = false;
-            cboSeason.Enabled = false;
+            //cboNendo.Enabled = false;
+            //cboSeason.Enabled = false;
 
-            btnDisplay.Enabled = false;
+            //btnDisplay.Enabled = false;
+            FunctionButtonEnabled(12);
         }
 
         private void EnabledCtrl()
         {
             ucSupplier.Enable();
-            ucBrand.Enable();
-            ucITEM.Enable();
-            ucMakerItem.Enable();
-            ucJANCD1.Enable();
+            //ucBrand.Enable();
+            //ucITEM.Enable();
+            //ucMakerItem.Enable();
+            //ucJANCD1.Enable();
 
-            chkSearch.Enabled = true;
-            rdoItem.Enabled = true;
-            rdoMakerItemCD.Enabled = true;
-            chkJANCDcut.Enabled = true;
-            chkZaikoSuZero.Enabled = true;
+            //chkSearch.Enabled = true;
+            //rdoItem.Enabled = true;
+            //rdoMakerItemCD.Enabled = true;
+            //chkJANCDcut.Enabled = true;
+            //chkZaikoSuZero.Enabled = true;
 
-            txtCatalogue.Enabled = true;
-            txtInportDate.Enabled = true;
-            ucSKUCD.Enable();
+            //txtCatalogue.Enabled = true;
+            //txtInportDate.Enabled = true;
+            //ucSKUCD.Enable();
 
-            cboNendo.Enabled = true;
-            cboSeason.Enabled = true;
+            //cboNendo.Enabled = true;
+            //cboSeason.Enabled = true;
 
-            btnDisplay.Enabled = true;
+            //btnDisplay.Enabled = true;
+            FunctionButtonDisabled(12);
         }
 
 
@@ -510,13 +512,15 @@ namespace SMS.Inventory
             chkZaikoSuZero.Checked = false;
             chkSearch.Checked = false;
 
-            rdoItem.Checked  = true;
+            rdoItem.Checked = true;
             rdoMakerItemCD.Checked = false;
+
+            EnabledCtrl();
 
             //dt_PSKS0104I.Clear();
             ucSupplier.SetFocus();
 
-            EnabledCtrl();
+
 
             lblKakuteiMode.Text = string.Empty;
             lblKakuteiMode.BackColor = Color.FromArgb(0, 176, 240);
@@ -533,7 +537,7 @@ namespace SMS.Inventory
             UC_Search ucsearch = sender as UC_Search;
             if (ucsearch.UC_Type == UC_Search.Type.Maker)
                 SearchMode = 1;
-            else  if (ucsearch.UC_Type == UC_Search.Type.Brand)
+            else if (ucsearch.UC_Type == UC_Search.Type.Brand)
                 SearchMode = 2;
             else if (ucsearch.UC_Type == UC_Search.Type.ITEM)
                 SearchMode = 3;
@@ -660,7 +664,7 @@ namespace SMS.Inventory
         {
             if (e.ColumnIndex == dgvPSK0104I.Columns["colNouki"].Index)
                 dgvPSK0104I.ImeMode = System.Windows.Forms.ImeMode.Hiragana;
-            else if(e.ColumnIndex == dgvPSK0104I.Columns["colKakuteiZaikoSu"].Index)
+            else if (e.ColumnIndex == dgvPSK0104I.Columns["colKakuteiZaikoSu"].Index)
                 dgvPSK0104I.ImeMode = System.Windows.Forms.ImeMode.Disable;
         }
 
@@ -682,6 +686,6 @@ namespace SMS.Inventory
             }
         }
 
-        
+
     }
 }

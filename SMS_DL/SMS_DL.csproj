@@ -87,6 +87,7 @@
     <Compile Include="T_NyuukinMeisai_DL.cs" />
     <Compile Include="T_RONRI_ZAIKO_DL.cs" />
     <Compile Include="T_SKSZaikoRireki_DL.cs" />
+    <Compile Include="T_SmileShiwake_DL.cs" />
     <Compile Include="T_SugorakuInport_DL.cs" />
     <Compile Include="T_Tessuryou_DL.cs" />
     <Compile Include="T_Ukebarai_DL.cs" />

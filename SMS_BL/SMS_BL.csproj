@@ -64,6 +64,7 @@
     <Compile Include="PETC0307I_BL.cs" />
     <Compile Include="PETC0308I_BL.cs" />
     <Compile Include="PETC0309I_BL.cs" />
+    <Compile Include="PETC0310I_BL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PSKS0101M_BL.cs" />
     <Compile Include="PSKS0102M_BL.cs" />
