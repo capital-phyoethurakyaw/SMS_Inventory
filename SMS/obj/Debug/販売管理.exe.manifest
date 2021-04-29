@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="販売管理.exe" version="2.2.0.61" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="販売管理.exe" version="2.2.0.72" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="logo_mark_l5k_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>K/rW1OV5AIHSPDlo+n6s2S+NOayATKyY8mnkGpslTWo=</dsig:DigestValue>
+        <dsig:DigestValue>mQFVnrW4LfxpZT9z2X/+FREmbKKf+z0Q3+uc19E/JZI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -206,7 +206,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gOyUDR0skRrR7TtHTF8/c0kuSJFXHSKEOQ6Ip0TAovg=</dsig:DigestValue>
+        <dsig:DigestValue>Ywk6SQ1FIUhsI7BY58Il0qvlE884Y3BYTkRFmwZLhbg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -218,7 +218,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>NlLpeC95a4KlNEoYheZnYxvvWkT48jvuviO8v7nfs0k=</dsig:DigestValue>
+        <dsig:DigestValue>Ogyhevg5xtk+yKhqTPhnR+90HaRv4W+IMqkVY0xCA94=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -230,7 +230,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xxwh4WWQClPIraSrp6+Gxrjk2mb/9lKg0I1qe7c7BNk=</dsig:DigestValue>
+        <dsig:DigestValue>sk1Dp1iDTrIAmancITbsc3zCBZKl5/MZ/vEPUgWqzwU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -254,19 +254,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tU2TfjGJ+z22+b80g35kxTpTVSRGGA3IkpL7v47lFFU=</dsig:DigestValue>
+        <dsig:DigestValue>2tfTQIYMOw465ITeE9TReWeIUxvzSPPBeCG/bvGsiFc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="販売管理.exe" size="2285568">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="販売管理.exe" size="2286592">
       <assemblyIdentity name="販売管理" version="1.0.0.17" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>zOTn33Sj/ARLnJ+uii48IJf4unh6jU2u5EhASbacHDo=</dsig:DigestValue>
+        <dsig:DigestValue>P7XjbRFrsLUfveiw8Tp8Up54WfWl48EP0oGc/Q1Ce3U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -78,7 +78,19 @@ namespace SMS.PopUp
             return await Task.Factory.StartNew<bool>(function);
         }
 
+        private bool CheckAllPhyoeGyiColumns(DataTable dt, string Keys)
+        {
+            int h = 0;
+            foreach (DataColumn dc in dt.Columns)
+            {
+                if (dc.ColumnName.Contains(Keys))
+                {
+                    h++;
+                }
+            }
 
+            return h.ToString() == dt.Columns.Count.ToString();
+        }
         public bool InsertData(int i)
         {
             try
@@ -119,22 +131,37 @@ namespace SMS.PopUp
                 //Delete Extra Column With Blank Rows   ---ktp 2019-04-16
                 ArrayList arrdatacolumn = new ArrayList();
 
-                foreach (DataColumn dc in dtImport.Columns)
+                string Keys = "MaungPhyoeGyi_JennieKim";  // -------PTK Added Use-header row Conflict
+                if (!CheckAllPhyoeGyiColumns(dtImport, Keys)) /// PTK Added For Use-header row Conflict
                 {
-                    if (dc.ColumnName.Contains("Column"))
+                    foreach (DataColumn dc in dtImport.Columns)
                     {
-                        arrdatacolumn.Add(dc);
+                        if (dc.ColumnName.Contains(Keys))
+                        {
+                            arrdatacolumn.Add(dc);
+                        }
+                    }
+
+                    foreach (DataColumn dc in arrdatacolumn)
+                    {
+                        dtImport.Columns.Remove(dc);
                     }
                 }
-
-                foreach (DataColumn dc in arrdatacolumn)
-                {
-                    dtImport.Columns.Remove(dc);
-                }
                 dtImport.AcceptChanges();
+                try
+                {
+                    M_MultiPorpose_Entity mme1 = new M_MultiPorpose_Entity();
+                    mme1.fields = "Char1,Num1,Char5";
+                    mme1.tableName = "M_MultiPorpose";
+                    mme1.condition = "Where ID=101 And [Key]='1'";
 
-
-
+                    DataTable dt1 = psks0103ibl.M_MultiPorpose_DynamicSelect(mme1);
+                    if (dt1.Rows[0]["Char5"].ToString() == "1")
+                    {
+                        MessageBox.Show("Excel cols " + dtImport.Columns.Count.ToString() + Environment.NewLine + "Pattern Cols" + dtPattern.Rows.Count.ToString());
+                    }
+                }
+                catch { }
                 if (dtImport.Columns.Count != dtPattern.Rows.Count)
                 {
                     DSP_MSG("E137", string.Empty, string.Empty, string.Empty, string.Empty, string.Empty);
@@ -172,7 +199,11 @@ namespace SMS.PopUp
 
                     if (File.Exists(destination + Path.GetFileName(filePath)))
                         File.Delete(destination + Path.GetFileName(filePath));
-                    File.Move(filePath, destination + Path.GetFileName(filePath));
+                    try
+                    {
+                        File.Move(filePath, destination + Path.GetFileName(filePath));
+                    }
+                    catch { };
                 }
                 else
                 {
@@ -240,6 +271,8 @@ namespace SMS.PopUp
                 ConfigureDataTable = (_) => new ExcelDataTableConfiguration()
                 {
                     UseHeaderRow = useHeaderRow,
+                    EmptyColumnNamePrefix= "MaungPhyoeGyi_JennieKim",
+
                 }
             });
 

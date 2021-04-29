@@ -160,7 +160,7 @@ namespace SMS.Inventory
                             }
                             ToCSV(ds, path + "\\" + fname);// For tennic
                         }
-                        cmf.DSP_MSG("I210", string.Empty, string.Empty, string.Empty, string.Empty, string.Empty);
+                        cmf.DSP_MSG("I201", string.Empty, string.Empty, string.Empty, string.Empty, string.Empty);
                         Init();
                         Process.Start(Path.GetDirectoryName(path));
                     }
@@ -191,7 +191,7 @@ namespace SMS.Inventory
             foreach (DataRow dr in dt.Rows)
             {
                 //取引日付
-                dr["取引日付"] = dr["取引日付"].ToString().Split(' ').First();
+                dr["取引日"] = dr["取引日"].ToString().Split(' ').First();
                 dr["借方金額(円)"] = Convert.ToDecimal(dr["借方金額(円)"].ToString()).ToString("#,##0");
                 dr["借方税額"] = Convert.ToDecimal(dr["借方税額"].ToString()).ToString("#,##0");
                 dr["貸方金額(円)"] = Convert.ToDecimal(dr["貸方金額(円)"].ToString()).ToString("#,##0");
@@ -201,19 +201,33 @@ namespace SMS.Inventory
         }
         public static void ToCSV(DataTable dtDataTable, string strFilePath)
         {
+            //取引No		
+            int o = 0;
+            var PrevCol = "";
+            foreach (DataRow dr in dtDataTable.Rows)
+            {
+                if (PrevCol != dr["Number"].ToString())
+                {
+                    o++;
+                }
+                dr["取引No"] = o.ToString();
+                PrevCol = dr["Number"].ToString();
+            }
+            dtDataTable.Columns.Remove("Number");
+            dtDataTable.AcceptChanges();
             StreamWriter sw = new StreamWriter(strFilePath, false, Encoding.GetEncoding(932));
             //headers  
-            
-            //foreach (DataColumn column in dtDataTable.Columns)
-            //{
-            //    var value = String.Format("\"{0}\"", column.ColumnName);
-            //    sw.Write(value);
-            //    if (column.Ordinal < dtDataTable.Columns.Count)
-            //    {
-            //        sw.Write(",");
-            //    }
-            //}
-            //sw.Write(sw.NewLine);
+
+            foreach (DataColumn column in dtDataTable.Columns)
+            {
+                var value = String.Format("\"{0}\"", column.ColumnName);
+                sw.Write(value);
+                if (column.Ordinal < dtDataTable.Columns.Count)
+                {
+                    sw.Write(",");
+                }
+            }
+            sw.Write(sw.NewLine);
             foreach (DataRow dr in dtDataTable.Rows)
             {
                 for (int i = 0; i < dtDataTable.Columns.Count; i++)

@@ -72,7 +72,7 @@ namespace SMS.Inventory
             }
 
             mme = new M_MultiPorpose_Entity();
-            mme.fields = "Char1,Num1";
+            mme.fields = "Char1,Num1,Char5";
             mme.tableName = "M_MultiPorpose";
             mme.condition = "Where ID=101 And [Key]='1'";
 
@@ -691,10 +691,10 @@ namespace SMS.Inventory
         /// <param name="e"></param>
         private void cboFileType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cboFileType.SelectedValue != null)
+            if (cboFileType.SelectedValue != null && cboFileType.SelectedValue.ToString() != "System.Data.DataRowView")
             {
                 msze = new M_SiiresakiZaiko_Entity();
-                msze.SiiresakiCD = ucSupplier.UC_Code;
+                msze.SiiresakiCD = ucSupplier.UC_Code; 
                 msze.FileKBN = cboFileType.SelectedValue.ToString();
 
                 psks0103ibl.M_SiiresakiZaiko_Update(msze);

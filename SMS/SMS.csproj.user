@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>D:\SMS_Publish\|D:\SweSwe\|C:\Users\Ei Thinzar Zaw\Desktop\Publish\|D:\SweSwe\Swe\|D:\kkkk\</PublishUrlHistory>
+    <PublishUrlHistory>D:\Publix\|D:\SMS_Publish\|D:\SweSwe\|C:\Users\Ei Thinzar Zaw\Desktop\Publish\|D:\SweSwe\Swe\</PublishUrlHistory>
     <InstallUrlHistory />
     <SupportUrlHistory />
     <UpdateUrlHistory>\\192.168.0.5\Dropbox %28Capital Group%29\Capital backup\systemdata\inventory\Publish\|\\devserver\Data_From_Dataserver\SMS_UpdatePath\</UpdateUrlHistory>
